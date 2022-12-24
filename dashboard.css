@@ -6,6 +6,7 @@
     --primary-color: blue;
     --light-color: whitesmoke;
     --neutral-color: #ccc;
+    --icon: aquamarine;
 }
 
 .header > div {
@@ -27,7 +28,7 @@
     grid-template-columns: 3rem 5fr;
     grid-template-rows: repeat(20, 1fr);
     color: var(--light-color);
-    gap: .5rem 1.5rem;
+    gap: .5rem 1rem;
     font-size: 1.25em;
     font-weight: bolder;
 }
@@ -37,6 +38,7 @@
     padding: 1.5rem 2rem;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
 }
 
 .content {
@@ -44,7 +46,12 @@
 }
 
 .icon {
-    background-color: aquamarine;
+    background-color: var(--icon);
+    /* justify-self: center; */
+    justify-self: end;
+    align-self: center;
+    height: 30px;
+    width: 30px;
 }
 
 .dash {
@@ -54,14 +61,22 @@
 .main {
     grid-row: span 2;
     font-size: 1.5em;
+    height: 40px;
+    width: 40px;
 }
 
 .blank {
     grid-column: span 2;
 }
 
+.searchIcon {
+    background-color: var(--icon);
+}
+
 .searchBar {
     grid-column: span 6;
+    display: flex;
+    align-items: center;
 }
 
 .searchBar > div {
@@ -74,18 +89,33 @@
 
 .notification {
     grid-column: 9 / span 1;
+    background-color: var(--icon);
 }
 
 .username {
     grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 1rem;
+    font-size: 18px;
+    font-weight: bolder;
+
 }
 
 .userIconLarge {
     grid-column: span 2;
+    background-color: var(--icon);
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
 }
 
 .welcomeUser {
-    grid-column: span 3;
+    grid-column: span 4;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .buttons {
@@ -101,4 +131,20 @@ button {
     border: none;
     background-color: var(--primary-color);
     color: var(--light-color);
+}
+
+.message {
+    font-weight: bolder;
+}
+
+.userTag {
+    font-size: 20px;
+    font-weight: bolder;
+
+}
+
+.userIcon {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
 }
