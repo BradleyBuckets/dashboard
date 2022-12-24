@@ -1,9 +1,9 @@
 * {
     margin: 0;
 }
-/* .sidebar > div {
+.header > div {
     border: 1px solid black;
-} */
+}
 .browser {
     height: 100vh;
     width: 100vw;
@@ -27,6 +27,9 @@
 
 .header {
     background-color: #ccc;
+    padding: 1.5rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
 }
 
 .content {
@@ -48,4 +51,36 @@
 
 .blank {
     grid-column: span 2;
+}
+
+.searchBar {
+    grid-column: span 6;
+}
+
+.notification {
+    grid-column: 9 / span 1;
+}
+
+.username {
+    grid-column: span 2;
+}
+
+.userIconLarge {
+    grid-column: span 2;
+}
+
+.welcomeUser {
+    grid-column: span 3;
+}
+
+.buttons {
+    grid-column: 8 / span 5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+button {
+    height: 75%;
+    width: 6rem;
+    border-radius: 2rem;
 }
