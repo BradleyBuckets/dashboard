@@ -1,6 +1,13 @@
 * {
     margin: 0;
 }
+
+:root{
+    --primary-color: blue;
+    --light-color: whitesmoke;
+    --neutral-color: #ccc;
+}
+
 .header > div {
     border: 1px solid black;
 }
@@ -13,27 +20,27 @@
 }
 
 .sidebar {
-    background-color: blue;
+    background-color: var(--primary-color);
     grid-row: 1 / span 2;
     padding: 1.5rem;
     display: grid;
     grid-template-columns: 3rem 5fr;
     grid-template-rows: repeat(20, 1fr);
-    color: whitesmoke;
+    color: var(--light-color);
     gap: .5rem 1.5rem;
     font-size: 1.25em;
     font-weight: bolder;
 }
 
 .header {
-    background-color: #ccc;
+    background-color: var(--light-color);
     padding: 1.5rem 2rem;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
 }
 
 .content {
-    background-color: whitesmoke;
+    background-color: var(--neutral-color);
 }
 
 .icon {
@@ -55,6 +62,14 @@
 
 .searchBar {
     grid-column: span 6;
+}
+
+.searchBar > div {
+    height: 50%;
+    width: 98%;
+    margin: 3% 1%;
+    background-color: var(--neutral-color);
+    border-radius: 2rem;
 }
 
 .notification {
@@ -80,7 +95,10 @@
     align-items: center;
 }
 button {
-    height: 75%;
+    height: 60%;
     width: 6rem;
     border-radius: 2rem;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--light-color);
 }
