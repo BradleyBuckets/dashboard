@@ -3,9 +3,9 @@
 }
 
 :root {
-  --primary-color: blue;
+  --primary-color: dodgerblue;
   --light-color: whitesmoke;
-  --neutral-color: #ccc;
+  --neutral-color: rgb(222, 221, 221);
   --icon: aquamarine;
   --accent-color: goldenrod;
 }
