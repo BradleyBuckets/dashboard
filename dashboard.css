@@ -186,11 +186,11 @@ button {
 .projectContent {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: min-content;
+  gap: 1rem;
 }
 
 .project {
-  height: 10rem;
+  height: 9rem;
   background-color: var(--light-color);
   border-left: 5px solid var(--accent-color);
   border-radius: 0.5rem;
@@ -245,6 +245,10 @@ button {
 
 .trendMessage {
   grid-column: span 2;
+}
+
+h3 {
+  font-size: 22px;
 }
 
 h4 {
