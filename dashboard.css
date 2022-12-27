@@ -50,12 +50,14 @@
 }
 
 .icon {
-  background-color: var(--icon);
+  /* background-color: var(--icon); */
   /* justify-self: center; */
   justify-self: end;
   align-self: center;
   height: 30px;
   width: 30px;
+  background-size: cover;
+  background-position: center;
 }
 
 .dash {
@@ -73,10 +75,6 @@
   grid-column: span 2;
 }
 
-.searchIcon {
-  background-color: var(--icon);
-}
-
 .searchBar {
   grid-column: span 6;
   display: flex;
@@ -89,11 +87,6 @@
   margin: 3% 1%;
   background-color: var(--neutral-color);
   border-radius: 2rem;
-}
-
-.notification {
-  grid-column: 9 / span 1;
-  background-color: var(--icon);
 }
 
 .username {
@@ -253,4 +246,63 @@ h3 {
 
 h4 {
   margin-bottom: 0.25rem;
+}
+
+.dashboard {
+  background-image: url("dashbaord/view-dashboard.png");
+}
+.home {
+  background-image: url("dashbaord/home.png");
+}
+.profile {
+  background-image: url("dashbaord/face-man-profile.png");
+}
+.messages {
+  background-image: url("dashbaord/message-reply.png");
+}
+.history {
+  background-image: url("dashbaord/history.png");
+}
+.tasks {
+  background-image: url("dashbaord/file-outline.png");
+}
+.communities {
+  background-image: url("dashbaord/account-group-outline.png");
+}
+.settings {
+  background-image: url("dashbaord/cog-outline.png");
+}
+.support {
+  background-image: url("dashbaord/help-circle-outline.png");
+}
+.privacy {
+  background-image: url("dashbaord/lock-outline.png");
+}
+.searchIcon {
+  background-image: url("dashbaord/magnify.png");
+}
+.notification {
+  grid-column: 9 / span 1;
+  background-image: url("dashbaord/bell-ring-outline.png");
+}
+.icon1 {
+  background-image: url("dashbaord/thumbs-up-down-outline.png");
+}
+.icon2 {
+  background-image: url("dashbaord/eye-refresh-outline.png");
+}
+.icon3 {
+  background-image: url("dashbaord/share-variant-outline.png");
+}
+.lime {
+  background-image: url("dashbaord/lime.png");
+}
+.bruton {
+  background-image: url("dashbaord/billiard.png");
+}
+.pine {
+  background-image: url("dashbaord/pineapple.png");
+}
+.buffalo {
+  background-image: url("dashbaord/man.png");
 }
